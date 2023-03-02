@@ -1,7 +1,7 @@
 import { Component, ViewChild, OnInit  } from '@angular/core';
 import { BarcodeScanner, ScanResult } from '@capacitor-community/barcode-scanner';
 import {NativeAudio} from '@capacitor-community/native-audio';
-import { Dialog } from '@capacitor/dialog';
+import  { TimeElement } from '../timeElement.model'
 
 @Component({
   selector: 'app-bar-code',
@@ -12,6 +12,12 @@ import { Dialog } from '@capacitor/dialog';
 export class BarCodeComponent {
 
   barCodeList: string[] = [];
+  listTimeElements: TimeElement[] = [
+    { title : "Emetteur", name : "Etablissement de test", adress : "1 Avenue des Roches",passed : true},
+    { title : "Transporteur", name : "Etablissement de test", adress : "1 Avenue des Roches",passed : true},
+    { title : "Destinataire", name : "Etablissement de test", adress : "1 Avenue des Roches",passed : false},
+    { title : "Destinataire", name : "Etablissement de test", adress : "1 Avenue des Roches",passed : false},
+   ];
 
   //initialiser les variables globales
   init(){
@@ -41,7 +47,7 @@ export class BarCodeComponent {
       this.scanActive = true;
       BarcodeScanner.hideBackground();
       this.scanner();
-    } else {  
+    } else {
       alert('NOT ALLOWED!');
     }
   }
@@ -61,7 +67,7 @@ export class BarCodeComponent {
 
           this.barCodeList.push(result.content);
         // }
-        
+
         this.scanner();
       }
   }
@@ -76,8 +82,8 @@ export class BarCodeComponent {
     //BIP
     NativeAudio.play({assetId:'scan', time:0.0})
   }
-  
-  
+
+
   // confirmDoublon = async () => {
   //     const { value } = await Dialog.confirm({
   //       title: 'Confirm',

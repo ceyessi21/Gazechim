@@ -8,7 +8,7 @@ import { ToggleComponent } from './components/toggle/toggle.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/timeline', pathMatch: 'full'},
+  { path: '', redirectTo: '/bar-code', pathMatch: 'full'},
   { path: 'timeline', component: TimelineComponent },
   { path: 'toggle', component: ToggleComponent },
   { path: 'authentication', component: UserAuthenticationComponent },
