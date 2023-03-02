@@ -1,0 +1,30 @@
+<app-notification  [type]="'info'" [message]="'Veuillez commencer la lecture Monsieur EYESSI. Veuillez commencer la lecture Monsieur EYESSI.'" *ngIf="!scanActive"></app-notification>
+
+<html>
+    <body>
+      <fieldset *ngIf="!scanActive">
+        <legend>BarCode List</legend>
+        <div >
+          <div>
+            <a *ngFor="let result of barCodeList">
+              {{result}}
+            </a>
+          </div>
+        </div>
+      </fieldset>
+        <div class="container" >
+          <!-- <button *ngIf="!scanActive" style="background-color: chartreuse;" class="add-button" (click)="startscanner()">SCAN</button> -->
+          <!-- <button *ngIf="scanActive" style="background-color: chartreuse;" class="add-button" (click)="stopScanner()">STOP</button> -->
+
+          <ion-button expand="full" (click)="startscanner()" *ngIf="!scanActive">
+            SCAN
+          </ion-button>
+          <ion-button expand="full" (click)="stopScanner()" class="scan-button" *ngIf="scanActive">
+            STOP
+          </ion-button>
+          </div>
+        <div class="scan-box" *ngIf="scanActive" id="scanBox"></div>
+      </body>
+      <audio id="beep" src="scan.mp3"></audio>
+
+</html>

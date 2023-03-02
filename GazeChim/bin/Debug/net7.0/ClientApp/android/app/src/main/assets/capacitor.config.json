@@ -1,0 +1,6 @@
+{
+	"appId": "com.gazechim.app",
+	"appName": "gaze-chim-angular",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

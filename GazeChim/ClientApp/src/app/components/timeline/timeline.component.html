@@ -1,0 +1,14 @@
+<div class="timeline">
+    <div class="timeline-object" *ngFor="let element of timeElements;"
+        [ngClass]="{'complete': ((timeElements.indexOf(element)+1)<(timeElements.length)) &&
+        timeElements[timeElements.indexOf(element)+1].passed,
+        'notcomplete': ((timeElements.indexOf(element)+1)<(timeElements.length)) &&
+        !timeElements[timeElements.indexOf(element)+1].passed} ">
+        <div class="timeline-status" [ngClass]="{'good':element.passed, 'ngood': !element.passed}"></div>
+        <div class="timeline-content">
+            <h3>{{ element.title}} </h3>
+            <span class="name">{{ element.name}}</span><br/>
+            <span>{{ element.adress}}</span>
+        </div>
+    </div>
+</div>

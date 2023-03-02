@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">GazeChim-Angular</string>
+    <string name="title_activity_main">GazeChim-Angular</string>
+    <string name="package_name">gazechim.app</string>
+    <string name="custom_url_scheme">gazechim.app</string>
+</resources>

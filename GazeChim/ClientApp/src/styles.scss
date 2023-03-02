@@ -1,0 +1,19 @@
+ion-toggle::part(handle) {
+  &::after{
+    content: "Refusé";
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    margin: 2px;
+  }
+}
+
+ion-toggle.toggle-checked::part(handle) {
+  &::after{
+    content: "Accepté";
+    color: black;
+    font-weight: bold;
+    margin: 2px;
+  }
+}

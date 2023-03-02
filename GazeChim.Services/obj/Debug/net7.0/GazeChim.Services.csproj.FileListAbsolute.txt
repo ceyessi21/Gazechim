@@ -1,0 +1,15 @@
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\bin\Debug\net7.0\GazeChim.Services.deps.json
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\bin\Debug\net7.0\GazeChim.Services.dll
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\bin\Debug\net7.0\GazeChim.Services.pdb
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\bin\Debug\net7.0\GazeChim.Data.dll
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\bin\Debug\net7.0\GazeChim.Data.pdb
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\obj\Debug\net7.0\GazeChim.Services.csproj.AssemblyReference.cache
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\obj\Debug\net7.0\GazeChim.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\obj\Debug\net7.0\GazeChim.Services.AssemblyInfoInputs.cache
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\obj\Debug\net7.0\GazeChim.Services.AssemblyInfo.cs
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\obj\Debug\net7.0\GazeChim.Services.csproj.CoreCompileInputs.cache
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\obj\Debug\net7.0\GazeChim.Services.csproj.CopyComplete
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\obj\Debug\net7.0\GazeChim.Services.dll
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\obj\Debug\net7.0\refint\GazeChim.Services.dll
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\obj\Debug\net7.0\GazeChim.Services.pdb
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Services\obj\Debug\net7.0\ref\GazeChim.Services.dll

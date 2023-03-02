@@ -1,0 +1,19 @@
+ion-toggle {
+  height: 30px;
+  width: 200px;
+  padding: 8px;
+  margin: 2px;
+
+  --background: #eb7769;
+  --background-checked: #95c34e;
+
+  --handle-background: #ffffff;
+  --handle-background-checked: #ffffff;
+
+  --handle-width: 100px;
+  --handle-height: 28px;
+  --handle-max-height: auto;
+
+  --handle-border-radius: 16px;
+  --handle-box-shadow: none;
+}

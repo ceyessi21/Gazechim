@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GazeChim.Data\GazeChim.Data.csproj" />
+    <ProjectReference Include="..\GazeChim.Services\GazeChim.Services.csproj" />
+  </ItemGroup>
+
+</Project>

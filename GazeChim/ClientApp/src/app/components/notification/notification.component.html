@@ -1,0 +1,15 @@
+<div class="notif"
+    [ngClass]="{'error': type==='error', 'warning': type==='warning', 'success': type==='success', 'info': type==='info'}">
+    <div>
+        <fa-icon style="position: -ms-page;" [icon]=" type === 'warning' ? warningIcon :
+        type === 'error' ? errorIcon :
+        type === 'success' ? successIcon : infoIcon">
+        </fa-icon>
+    </div>
+    <div>
+        <span *ngIf="title" class="title"> {{ title.toUpperCase() }}</span>
+        <div class="message">
+            {{message}}
+        </div>
+    </div>
+</div>

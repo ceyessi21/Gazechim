@@ -1,0 +1,12 @@
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\bin\Debug\net7.0\GazeChim.Data.deps.json
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\bin\Debug\net7.0\GazeChim.Data.dll
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\bin\Debug\net7.0\GazeChim.Data.pdb
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\obj\Debug\net7.0\GazeChim.Data.csproj.AssemblyReference.cache
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\obj\Debug\net7.0\GazeChim.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\obj\Debug\net7.0\GazeChim.Data.AssemblyInfoInputs.cache
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\obj\Debug\net7.0\GazeChim.Data.AssemblyInfo.cs
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\obj\Debug\net7.0\GazeChim.Data.csproj.CoreCompileInputs.cache
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\obj\Debug\net7.0\GazeChim.Data.dll
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\obj\Debug\net7.0\refint\GazeChim.Data.dll
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\obj\Debug\net7.0\GazeChim.Data.pdb
+C:\TALAN\GazeChim\POC-Gazechim\GazeChim.Data\obj\Debug\net7.0\ref\GazeChim.Data.dll
