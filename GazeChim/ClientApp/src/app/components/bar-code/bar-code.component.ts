@@ -1,7 +1,7 @@
 import { Component, ViewChild, OnInit  } from '@angular/core';
 import { BarcodeScanner, ScanResult } from '@capacitor-community/barcode-scanner';
 import {NativeAudio} from '@capacitor-community/native-audio';
-import  { TimeElement } from '../timeElement.model'
+import  { TimeElement, Object } from '../interfaces.model'
 
 @Component({
   selector: 'app-bar-code',
@@ -18,6 +18,18 @@ export class BarCodeComponent {
     { title : "Destinataire", name : "Etablissement de test", adress : "1 Avenue des Roches",passed : false},
     { title : "Destinataire", name : "Etablissement de test", adress : "1 Avenue des Roches",passed : false},
    ];
+
+   object : Object[]= [
+    { label: 'Raison Sociale', value: 'Etablissement de test' },
+    { label: 'Siret', value: '0000000000012980' },
+    { label: 'N° TVA', value: '1234567890123' },
+    { label: 'Adresse', value: '1 Avenue des roches, 13001 Marseille' },
+    { label: 'Téléphone', value: '0412345678' },
+    { label: 'E-mail', value: 'exemple@email.fr' },
+    { label: 'Contact', value: 'DUPONT Paul' },
+    { label: 'Conditionnement', value: 'BOUTEILLE 1234 (2kg)' },
+    { label: 'Poids total', value: '2kg' },
+  ];
 
   //initialiser les variables globales
   init(){

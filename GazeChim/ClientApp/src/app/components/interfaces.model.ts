@@ -4,3 +4,8 @@ export interface TimeElement {
     adress : string,
     passed : boolean,
 }
+
+export interface Object {
+  label : string,
+  value : string,
+}

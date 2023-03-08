@@ -14,6 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { ObjectInfoComponent } from './components/object-info/object-info.component';
+import { DetailBordereauComponent } from './components/detail-bordereau/detail-bordereau.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +24,8 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     NotificationComponent,
     ToggleComponent,
     TimelineComponent,
+    ObjectInfoComponent,
+    DetailBordereauComponent,
   ],
   imports: [
     BrowserModule,

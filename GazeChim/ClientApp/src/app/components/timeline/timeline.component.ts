@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import  { TimeElement } from '../timeElement.model'
+import  { TimeElement } from '../interfaces.model'
 
 @Component({
   selector: 'app-timeline',

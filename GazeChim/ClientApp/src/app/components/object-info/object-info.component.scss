@@ -1,0 +1,29 @@
+.object{
+  display: flex;
+  border-radius: 16px;
+  padding: 18px;
+  // width: 400px;
+  background-color: #FFFFFF;//#B0F2B6;
+
+  .colorB  {
+    color: #0060A9;
+  }
+}
+
+.attribute{
+  margin-left: -28px;
+  margin-top: 10px;
+}
+
+.label{
+  color: #8A8A8A;
+}
+
+.value {
+  // padding: 8px;
+  font-weight: bold;
+}
+.ng-fa-icon {
+  margin-right: 8px;
+}
+

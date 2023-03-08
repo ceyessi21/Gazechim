@@ -6,9 +6,13 @@ import { NotificationComponent } from './components/notification/notification.co
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { ObjectInfoComponent } from './components/object-info/object-info.component';
+import { DetailBordereauComponent } from './components/detail-bordereau/detail-bordereau.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/bar-code', pathMatch: 'full'},
+  { path: '', redirectTo: '/detail-bordereau', pathMatch: 'full'},
+  { path: 'detail-bordereau', component: DetailBordereauComponent },
+  { path: 'object-info', component: ObjectInfoComponent },
   { path: 'timeline', component: TimelineComponent },
   { path: 'toggle', component: ToggleComponent },
   { path: 'authentication', component: UserAuthenticationComponent },

@@ -1,0 +1,14 @@
+<br/>
+<div class="object">
+      <div class="colorB">
+          <fa-icon style="position: -ms-page;" [icon]="icon"></fa-icon>
+      </div>
+      <div>
+        <span ngClass="colorB" *ngIf="title" class="title"> {{ title.toUpperCase() }}</span>
+        <div class="attribute" *ngFor="let obj of object;">
+          <span class="label">{{ obj.label}}</span><br/>
+          <span class="value">{{ obj.value}}</span>
+        </div>
+      </div>
+
+</div>

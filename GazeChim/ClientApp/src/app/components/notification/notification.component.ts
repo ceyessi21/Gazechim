@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { faExclamationTriangle, faTimesCircle, faCheckCircle, faInfoCircle  } from '@fortawesome/free-solid-svg-icons'
-
-
+import { IonIcon } from '@ionic/angular';
 @Component({
   selector: 'app-notification',
   templateUrl: './notification.component.html',
