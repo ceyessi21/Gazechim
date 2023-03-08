@@ -1,0 +1,13 @@
+<a routerLink="../{{link}}" style="text-decoration: none;">
+  <div class="notif"
+        [ngClass]="{'error': type==='error', 'warning': type==='warning', 'success': type==='success', 'info': type==='info'}">
+        <fa-icon style="position: -ms-page;" [icon]=" type === 'warning' ? warningIcon :
+          type === 'error' ? errorIcon :
+          type === 'success' ? successIcon : infoIcon">
+        </fa-icon>
+          <span *ngIf="message"> {{ message }}</span>
+        <span *ngIf="number" class="number" > {{ number }}</span>
+  </div>
+</a>
+
+

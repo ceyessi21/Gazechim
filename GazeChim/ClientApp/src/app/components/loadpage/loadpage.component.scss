@@ -1,0 +1,40 @@
+
+
+.notif {
+  display: flex;
+  border-radius: 16px;
+  padding: 8px;
+  color: #FFFFFF;
+  position: relative;
+
+  &.success {
+      background-color: #B0F2B6;
+  }
+
+  &.error {
+      background-color: #FF6961;
+    }
+
+  &.warning {
+      background-color: #ff9800 ;
+  }
+
+  &.info {
+      background: rgba(0, 145, 255, 0.2);
+  }
+  .number{
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    width: 10%;
+  }
+
+}
+
+.ng-fa-icon {
+  margin-right: 8px;
+}
+
+
+
+

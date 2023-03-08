@@ -8,9 +8,11 @@ import { ToggleComponent } from './components/toggle/toggle.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { ObjectInfoComponent } from './components/object-info/object-info.component';
 import { DetailBordereauComponent } from './components/detail-bordereau/detail-bordereau.component';
+import { LoadpageComponent } from './components/loadpage/loadpage.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/detail-bordereau', pathMatch: 'full'},
+  { path: '', redirectTo: '/loadpage', pathMatch: 'full'},
+  { path: 'loadpage', component: LoadpageComponent },
   { path: 'detail-bordereau', component: DetailBordereauComponent },
   { path: 'object-info', component: ObjectInfoComponent },
   { path: 'timeline', component: TimelineComponent },

@@ -16,6 +16,7 @@ import { ToggleComponent } from './components/toggle/toggle.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 import { ObjectInfoComponent } from './components/object-info/object-info.component';
 import { DetailBordereauComponent } from './components/detail-bordereau/detail-bordereau.component';
+import { LoadpageComponent } from './components/loadpage/loadpage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { DetailBordereauComponent } from './components/detail-bordereau/detail-b
     TimelineComponent,
     ObjectInfoComponent,
     DetailBordereauComponent,
+    LoadpageComponent,
   ],
   imports: [
     BrowserModule,
