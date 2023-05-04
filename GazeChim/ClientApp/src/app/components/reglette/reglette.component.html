@@ -1,0 +1,61 @@
+<body class="page">
+      <div class="tmp">
+          <input type="range" class="orient" min="-100" list="bartmp" value="{{element.bar}}" >
+               <datalist id="bartmp">
+                    <option *ngFor="let temp of bartmp" [value]="temp.bar">
+                      {{temp.bar}}
+                    </option>
+               </datalist>
+
+      </div>
+
+
+      <div class=" alter">
+        <div class="selectFluide">
+            <div >
+              <span> {{ title.toUpperCase() }}</span>
+            </div>
+            <div >
+              <fa-icon style="position: -ms-page;margin-right: 12px;" [icon]="warningIcon"></fa-icon>
+            </div>
+        </div>
+
+        <div class="toggle" >
+          <div>
+            <span> Dew</span>
+          </div>
+          <div >
+            <ion-toggle [(ngModel)]="dew" ></ion-toggle>
+          </div>
+        </div>
+
+        <div class="toggle" >
+          <div >
+            <span>Absolue</span>
+          </div>
+          <div>
+            <ion-toggle [(ngModel)]="absolute"></ion-toggle>
+          </div>
+        </div>
+        <div >
+          <div >
+            <input type="text" class="selectFluide" [(ngModel)]="element.bar" (ngModelChange)="updateTemp()">
+          </div>
+        </div>
+        <div >
+        <div *ngIf="!absolute">
+          <input class="selectFluide" type="text" [(ngModel)]="element.temp" (ngModelChange)="updateBar()">
+        </div>
+        <div *ngIf="absolute">
+          <input class="selectFluide" type="text" [(ngModel)]="element.tempAbs" (ngModelChange)="updateBar()">
+        </div>
+        <!-- <div>
+          <ion-range class="orient" aria-label="Custom range" [value]="5" [ticks]="true" [snaps]="true" [pin]="true" [min]="-20" [max]="10">
+          </ion-range>
+        </div> -->
+    </div>
+  </div>
+
+</body>
+
+

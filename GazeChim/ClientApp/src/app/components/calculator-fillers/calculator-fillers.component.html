@@ -1,0 +1,54 @@
+<!-- <form [formGroup]="Empregister" (ngSubmit)="HandleSubmit()"> -->
+  <mat-stepper [linear]="isLinear" labelPosition = "bottom" #stepper>
+      <mat-step [stepControl]="application" #stepper>
+        <form [formGroup]="application">
+          <ng-template matStepLabel>APPLICATION</ng-template>
+              <app-application></app-application>
+          <div>
+            <button mat-raised-button color="primary" matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="category" #stepper>
+        <form [formGroup]="category">
+          <ng-template matStepLabel>CATEGORIE</ng-template>
+              <app-category></app-category>
+          <div >
+            <button mat-raised-button color="primary" matStepperPrevious>Back</button> |
+            <button mat-raised-button color="primary" matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="class" #stepper>
+        <form [formGroup]="class">
+          <ng-template matStepLabel>CLASSE</ng-template>
+              <app-class></app-class>
+          <div>
+            <button mat-raised-button color="primary" matStepperPrevious>Back</button> |
+            <button mat-raised-button color="primary" matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="system" #stepper>
+        <form [formGroup]="system">
+          <ng-template matStepLabel>SYSTEME</ng-template>
+              <app-system></app-system>
+          <div>
+            <button mat-raised-button color="primary" matStepperPrevious>Back</button> |
+            <button mat-raised-button color="primary" matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="result" #stepper>
+        <form [formGroup]="result">
+          <ng-template matStepLabel>RESULTAT</ng-template>
+              <app-result></app-result>
+          <div>
+            <button mat-raised-button color="primary" matStepperPrevious>Back</button> |
+            <button mat-raised-button color="accent" >Submit</button>
+          </div>
+        </form>
+      </mat-step>
+
+    </mat-stepper>
+  <!-- </form> -->

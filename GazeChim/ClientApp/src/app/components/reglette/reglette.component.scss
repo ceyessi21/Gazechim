@@ -1,0 +1,76 @@
+.page{
+  display: flex;
+  // margin-top: 50px;
+  flex-wrap: wrap;
+  background-color: black;// #FFFFFF; #B0F2B6;
+}
+
+.object{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+input {
+    margin: 0.4rem;
+}
+
+.orient {
+  transform:rotate(-90deg) translate(-50%,0);
+}
+
+ion-range {
+  --bar-background: #a2d2ff;
+  --bar-background-active: #bde0fe;
+  --bar-height: 8px;
+  --bar-border-radius: 8px;
+  --knob-background: #ffc8dd;
+  --knob-size: 40px;
+  --pin-background: #ffafcc;
+  --pin-color: #fff;
+}
+
+.selectFluide {
+  display: flex;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: grey;
+  color: white;
+  justify-content: space-between;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  flex-basis: 3%;
+}
+
+.tmp{
+  background-color: grey;
+  border-radius: 8px;
+  margin-right: 6px;
+  margin-left: 6px;
+  flex-basis: 3%;
+}
+
+.toggle {
+  display: flex;
+  border-radius: 4px;
+  padding: 8px;
+  // background-color: grey;
+  color: white;
+  justify-content: space-between;
+  margin-right: 2px;
+  // flex-basis: 70%;
+}
+
+ion-toggle {
+  --background: #eb7769;
+  --background-checked: #95c34e;
+    margin-top: -12px;
+  --handle-background: #ffffff;
+  --handle-background-checked: #ffffff;
+  --handle-border-radius: 16px;
+  --handle-box-shadow: none;
+}
+
+.alter{
+  flex-grow: 1;
+}

@@ -1,0 +1,41 @@
+.regle {
+  height: 200px; /* hauteur de la règle */
+  width: 1px; /* largeur de la règle */
+  background-color: black; /* couleur de la règle */
+  position: relative;
+  margin-left: 20px;
+  margin-top: 12px;
+}
+
+.graduation {
+  height: 1px; /* hauteur de chaque graduation */
+  width: 10px; /* largeur de chaque graduation */
+  background-color: black; /* couleur de chaque graduation */
+  position: absolute;
+  left: 50%; /* aligner chaque graduation au centre de la règle */
+  transform-origin: top center; /* l'origine de la transformation */
+  transform: translate(-50%, 0) rotate(90deg); /* translation pour centrer chaque graduation, puis rotation de chaque graduation de 90 degrés */
+}
+
+.graduation:nth-child(1) {
+  top: 0; /* position de la première graduation */
+}
+
+.graduation:nth-child(2) {
+  top: 10px; /* position de la deuxième graduation */
+}
+
+.graduation:nth-child(3) {
+  top: 20px; /* position de la troisième graduation */
+}
+
+/* et ainsi de suite pour les autres graduations */
+
+.line{
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.trait{
+ margin-bottom: 2px;
+}

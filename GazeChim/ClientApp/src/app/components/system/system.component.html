@@ -1,0 +1,48 @@
+<ion-grid>
+  <ion-row>
+    <ion-col size="4">
+      <div class="ion-padding">
+        <ion-item>
+          <ion-label position="floating">Height</ion-label>
+          <ion-input type="number" [(ngModel)]="height"></ion-input>
+        </ion-item>
+      </div>
+    </ion-col>
+
+    <ion-col size="4">
+      <div class="ion-padding">
+        <ion-item>
+          <ion-label position="floating">Length</ion-label>
+          <ion-input type="number" [(ngModel)]="length"></ion-input>
+        </ion-item>
+      </div>
+    </ion-col>
+
+    <ion-col size="4">
+      <div class="ion-padding">
+        <ion-item>
+          <ion-label position="floating">Width</ion-label>
+          <ion-input type="number" [(ngModel)]="width"></ion-input>
+        </ion-item>
+      </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-button expand="block" (click)="calculateSurface()">Calculer</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <div class="ion-padding">
+        <ion-item>
+          <ion-label position="floating">Area</ion-label>
+          <ion-input type="number" [(ngModel)]="surface"></ion-input>
+        </ion-item>
+      </div>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>

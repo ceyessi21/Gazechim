@@ -1,7 +1,5 @@
 <app-notification  [type]="'info'" [message]="'Veuillez commencer la lecture Monsieur EYESSI. Veuillez commencer la lecture Monsieur EYESSI.'" *ngIf="!scanActive"></app-notification>
 
-<html>
-    <body>
       <fieldset *ngIf="!scanActive">
         <legend>BarCode List</legend>
         <div >
@@ -24,9 +22,6 @@
           </ion-button>
           </div>
         <div class="scan-box" *ngIf="scanActive" id="scanBox"></div>
-      </body>
-      <audio id="beep" src="scan.mp3"></audio>
 
-</html>
 <app-timeline [timeElements]="listTimeElements"></app-timeline>
 <app-object-info [title]="'Opérateur'" [object]="object"></app-object-info>
