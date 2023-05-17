@@ -166,19 +166,6 @@ export class ResultComponent implements  AfterViewInit {
     }
   }
 
-  // onSegmentChanged(event: any) {
-  //   this.selectedOpteon = this.getElementByName(this.selectedOption);
-  //   console.log(' this.selectedOpteon = ' + this.selectedOpteon);
-  //   if (this.selectedOpteon != null) {
-  //     this.enappc = this.formatValue(
-  //       this.selectedOpteon.lFL * this.volume * 0.2
-  //     );
-  //     this.qlav = this.formatValue(this.volume * this.selectedOpteon.qlmv);
-  //     this.qlmv = this.formatValue(this.volume * this.selectedOpteon.qlav);
-  //     console.log('selectedOption = ' + this.selectedOption);
-  //   }
-  // }
-
   getElementByName(name: string): Opteon | null {
     let value: Opteon | null = null;
     for (let opt of this.listOpteon) {
