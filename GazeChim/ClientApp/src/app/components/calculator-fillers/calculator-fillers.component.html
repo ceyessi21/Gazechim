@@ -12,7 +12,7 @@
       <mat-step [stepControl]="category" #stepper>
         <form [formGroup]="category">
           <ng-template matStepLabel>CATEGORIE</ng-template>
-              <app-category></app-category>
+              <app-category (selectedtCategory)="accessCategory = $event" ></app-category>
           <div >
             <button mat-raised-button color="primary" matStepperPrevious>Back</button> |
             <button mat-raised-button color="primary" matStepperNext>Next</button>
@@ -22,7 +22,7 @@
       <mat-step [stepControl]="class" #stepper>
         <form [formGroup]="class">
           <ng-template matStepLabel>CLASSE</ng-template>
-              <app-class></app-class>
+              <app-class  (selectedClass)="accessClass = $event" ></app-class>
           <div>
             <button mat-raised-button color="primary" matStepperPrevious>Back</button> |
             <button mat-raised-button color="primary" matStepperNext>Next</button>
@@ -32,7 +32,7 @@
       <mat-step [stepControl]="system" #stepper>
         <form [formGroup]="system">
           <ng-template matStepLabel>SYSTEME</ng-template>
-              <app-system></app-system>
+              <app-system (changeVolume)="volume = $event"></app-system>
           <div>
             <button mat-raised-button color="primary" matStepperPrevious>Back</button> |
             <button mat-raised-button color="primary" matStepperNext>Next</button>
@@ -42,8 +42,13 @@
       <mat-step [stepControl]="result" #stepper>
         <form [formGroup]="result">
           <ng-template matStepLabel>RESULTAT</ng-template>
-              <app-result></app-result>
-          <div>
+          <div class="">
+            <app-result [volume]="volume" [listOpteon]="listOpteon" [accessCategory]="accessCategory"
+            [accessClass]="accessClass" ></app-result>
+          </div>
+          <span>Category: {{accessCategory}}</span><br/>
+          <span>Class: {{accessClass}}</span>
+          <div >
             <button mat-raised-button color="primary" matStepperPrevious>Back</button> |
             <button mat-raised-button color="accent" >Submit</button>
           </div>
@@ -51,4 +56,3 @@
       </mat-step>
 
     </mat-stepper>
-  <!-- </form> -->

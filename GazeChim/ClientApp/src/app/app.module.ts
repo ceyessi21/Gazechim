@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
-import { IonicModule } from '@ionic/angular';
+import { IonicModule, IonSegment, IonSegmentButton } from '@ionic/angular';
 
 // import { AuthenticationModule } from './components/authentication/authentication.module';
 import { BarCodeComponent } from './components/bar-code/bar-code.component';

@@ -1,39 +1,54 @@
-<mat-tab-group animationDuration="0ms">
-  <mat-tab label="Classe I">
-    <div class="container">
+<ion-segment value="{{selectedOption}}" (ionChange)="loadClass($event)" [(ngModel)]="selectedOption">
+  <ion-segment-button *ngFor="let cl of listClass" [value]="cl.label">
+      <ion-label>{{cl.label}}</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+<div class="container" [ngClass]="{'centered': selectedOption==='Classe I', 'gauche': selectedOption==='Classe II',
+            'droite': selectedOption==='Classe III' || selectedOption==='Classe IV'}">
+  <p >{{selectedOption}}</p>
+  <mat-divider></mat-divider>
+    <p>
+        Cependant, si vous avez accès à la page Web elle-même, vous pouvez facilement afficher son code source en utilisant les outils de développement intégrés à la plupart des navigateurs Web modernes. Par exemple, dans Google Chrome, vous pouvez accéder aux outils de développement en appuyant sur F12, en cliquant sur le menu de trois points en haut à droite, puis en sélectionnant "Plus d'outils" > "Outils de développement". Dans la fenêtre qui s'ouvre, vous pouvez cliquer sur l'onglet "Elements" pour afficher le code HTML de la page.
+    </p>
+</div>
+
+<!-- <mat-tab-group animationDuration="0ms" #tabGroup (selectedIndexChange)="getClasse()"> -->
+  <!-- <mat-tab label="Classe I"> -->
+    <!-- <div class="container"  *ngIf="selectedOption == 'Classe I'">
       <p class="centered">Classe I</p>
       <mat-divider></mat-divider>
       <p class="centered">
         Cependant, si vous avez accès à la page Web elle-même, vous pouvez facilement afficher son code source en utilisant les outils de développement intégrés à la plupart des navigateurs Web modernes. Par exemple, dans Google Chrome, vous pouvez accéder aux outils de développement en appuyant sur F12, en cliquant sur le menu de trois points en haut à droite, puis en sélectionnant "Plus d'outils" > "Outils de développement". Dans la fenêtre qui s'ouvre, vous pouvez cliquer sur l'onglet "Elements" pour afficher le code HTML de la page.
       </p>
-    </div>
-  </mat-tab>
-  <mat-tab label="Classe II">
-    <div class="container">
+    </div> -->
+  <!-- </mat-tab> -->
+  <!-- <mat-tab label="Classe II"> -->
+    <!-- <div class="container" *ngIf="selectedOption == 'Classe II'">
       <p class="gauche">Classe II</p>
       <mat-divider></mat-divider>
       <p class="gauche">
         Cependant, si vous avez accès à la page Web elle-même, vous pouvez facilement afficher son code source en utilisant les outils de développement intégrés à la plupart des navigateurs Web modernes. Par exemple, dans Google Chrome, vous pouvez accéder aux outils de développement en appuyant sur F12, en cliquant sur le menu de trois points en haut à droite, puis en sélectionnant "Plus d'outils" > "Outils de développement". Dans la fenêtre qui s'ouvre, vous pouvez cliquer sur l'onglet "Elements" pour afficher le code HTML de la page.
       </p>
-    </div>
-  </mat-tab>
-  <mat-tab label="Classe III">
-    <div class="container">
+    </div> -->
+  <!-- </mat-tab> -->
+  <!-- <mat-tab label="Classe III"> -->
+    <!-- <div class="container" *ngIf="selectedOption == 'Classe III'">
       <p class="droite">Classe III</p>
       <mat-divider></mat-divider>
       <p class="droite">
         Cependant, si vous avez accès à la page Web elle-même, vous pouvez facilement afficher son code source en utilisant les outils de développement intégrés à la plupart des navigateurs Web modernes. Par exemple, dans Google Chrome, vous pouvez accéder aux outils de développement en appuyant sur F12, en cliquant sur le menu de trois points en haut à droite, puis en sélectionnant "Plus d'outils" > "Outils de développement". Dans la fenêtre qui s'ouvre, vous pouvez cliquer sur l'onglet "Elements" pour afficher le code HTML de la page.
       </p>
-    </div>
-  </mat-tab>
-  <mat-tab label="Classe IV">
-    <div class="container">
+    </div> -->
+  <!-- </mat-tab> -->
+  <!-- <mat-tab label="Classe IV"> -->
+    <!-- <div class="container" *ngIf="selectedOption == 'Classe IV'">
       <p class="droite">Classe IV</p>
       <mat-divider></mat-divider>
       <p class="droite">
         Cependant, si vous avez accès à la page Web elle-même, vous pouvez facilement afficher son code source en utilisant les outils de développement intégrés à la plupart des navigateurs Web modernes. Par exemple, dans Google Chrome, vous pouvez accéder aux outils de développement en appuyant sur F12, en cliquant sur le menu de trois points en haut à droite, puis en sélectionnant "Plus d'outils" > "Outils de développement". Dans la fenêtre qui s'ouvre, vous pouvez cliquer sur l'onglet "Elements" pour afficher le code HTML de la page.
       </p>
-    </div>
-  </mat-tab>
-</mat-tab-group>
+    </div> -->
+  <!-- </mat-tab> -->
+<!-- </mat-tab-group> -->
 

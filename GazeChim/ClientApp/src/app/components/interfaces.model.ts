@@ -24,3 +24,19 @@ export interface Fluide {
   data: Bartemp[];
 }
 
+export interface Opteon {
+  nameFluide : string;
+  lFL: number;
+  m1: number;
+  m2: number;
+  m3: number;
+  qlmv: number;
+  qlav: number;
+}
+export interface CategoryLabel {
+    label : string;
+}
+export interface ClassLabel {
+  label : string;
+}
+

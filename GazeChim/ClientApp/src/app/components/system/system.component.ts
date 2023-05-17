@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import  { CalculatorService } from '../calculatorService'
 
 @Component({
   selector: 'app-system',
@@ -9,10 +10,17 @@ export class SystemComponent {
     height : number = 0;
     length : number = 0;
     width : number = 0 ;
-    surface !: number;
+    volume !: number;
 
-    calculateSurface() {
+    @Output() changeVolume = new EventEmitter<number>();
+
+    constructor(private calculService: CalculatorService) {}
+
+    calculateVolume() {
       console.log("Calculer la surface");
-      this.surface = this.height * this.length * this.width;
+      this.volume = this.height * this.length * this.width;
+      this.calculService.setVolume(this.volume);
+      console.log("this.calculService.getVolume() "+this.calculService.getVolume());
+      this.changeVolume.emit(this.volume);
     }
 }

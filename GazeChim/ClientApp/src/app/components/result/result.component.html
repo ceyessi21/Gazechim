@@ -1,6 +1,21 @@
-<mat-button-toggle-group #group="matButtonToggleGroup">
-  <mat-button-toggle value="bold">Bold</mat-button-toggle>
-  <mat-button-toggle value="italic">Italic</mat-button-toggle>
-  <mat-button-toggle value="underline">Underline</mat-button-toggle>
-</mat-button-toggle-group>
-<div class="example-selected-value">Selected value: {{group.value}}</div>
+<ion-segment value="{{selectedOption}}" (ionChange)="loadCalculate($event)" [(ngModel)]="selectedOption">
+  <ion-segment-button *ngFor="let opt of listOpteon" [value]="opt.nameFluide">
+    <ion-label>{{opt.nameFluide}}</ion-label>
+  </ion-segment-button>
+</ion-segment>
+<div *ngIf="selectedOption != ''" >
+  <span>Sealed System</span>
+  <div>
+    <mat-divider></mat-divider>
+    <span>EN 378 Appendix C1: </span><br/>
+    <span>{{enappc}}</span>
+  </div>
+  <div>
+    <span>EN 378 Appendix C3 (QLAV): </span><br/>
+    <span>{{qlav}}</span>
+  </div>
+  <div>
+    <span>EN 378 Appendix C3 (QLMV): </span><br/>
+    <span>{{qlmv}}</span>
+  </div>
+</div>

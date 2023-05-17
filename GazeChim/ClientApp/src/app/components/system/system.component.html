@@ -30,7 +30,7 @@
 
   <ion-row>
     <ion-col size="12">
-      <ion-button expand="block" (click)="calculateSurface()">Calculer</ion-button>
+      <ion-button class="color" expand="block" (click)="calculateVolume()">Calculate</ion-button>
     </ion-col>
   </ion-row>
 
@@ -38,8 +38,8 @@
     <ion-col size="12">
       <div class="ion-padding">
         <ion-item>
-          <ion-label position="floating">Area</ion-label>
-          <ion-input type="number" [(ngModel)]="surface"></ion-input>
+          <ion-label position="floating">Volume</ion-label>
+          <ion-input type="number" [(ngModel)]="volume"></ion-input>
         </ion-item>
       </div>
     </ion-col>
